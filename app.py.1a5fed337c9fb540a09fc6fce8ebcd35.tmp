@@ -56,7 +56,7 @@ def home():
 
 
 if __name__ == "__main__":
-    APP.run(
+    app.run(
         host=os.getenv("IP", "0.0.0.0"),
         port=os.getenv("PORT", "8081"),
     )
