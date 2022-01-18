@@ -90,21 +90,21 @@
                 </div>
                 <div class="form-group row">
                     <input type="submit" class="col-sm-4 mx-auto btn"
-                        style="border-radius: 5px; filter: drop-shadow(8px 8px 0px #444444);""></submit>
-            </div>
-        </form>
-    </div>
-</div>
-{% if prediction != None %}
-<div class=" form-group row">
-                    <div class="col-sm-6 mx-auto p-3 mt-5"
-                        style="background-color: #43a047; border-radius: 5px; filter: drop-shadow(8px 8px 0px #444444);">
-                        <div style="font-family: 'Merriweather', serif; font-size: 50px; text-align: center;">
-                            Predicted Price: ${{prediction}}
-                        </div>
-                    </div>
+                        style="border-radius: 5px; filter: drop-shadow(8px 8px 0px #444444);" value="Submit"></submit>
                 </div>
-                {% endif %}
+            </form>
+        </div>
+    </div>
+    {% if prediction != None %}
+    <div class=" form-group row">
+        <div class="col-sm-6 mx-auto p-3 mt-5"
+            style="background-color: #43a047; border-radius: 5px; filter: drop-shadow(8px 8px 0px #444444);">
+            <div style="font-family: 'Merriweather', serif; font-size: 50px; text-align: center;">
+                Predicted Price: ${{prediction}}
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </body>
 
 </html>
